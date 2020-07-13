@@ -41,3 +41,5 @@ The delta sheet contains all new transactions that have been added since the scr
 
 ## To be fixed
 - calculate_stock_value() => conversion of german/international number system
+- table labelling for delta sheet => not added unless master sheet is new
+- name function => str length error
