@@ -47,6 +47,6 @@ The delta sheet contains all new transactions that have been added since the scr
 * generate master sheet of all transactions
 * generate delta sheet for new transactions (base for TradeRepublic import)
 
-# v0.2
+## 0.2
 - fixed | sort extracted transactions by date
 - fixed | double entries of table lables in delta sheet
