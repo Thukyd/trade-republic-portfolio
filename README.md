@@ -1,4 +1,4 @@
-# 0.2 | TradeRepublic - PDF Converter for Portfolio Performance
+# 0.2 | TradeRepublic Portfolio - PDF Converter for Portfolio Performance & Investing.com
 # a) Description
 This tool should help to keep the overview of the transactions within TradeRepublic. In TR there is the possibility to export all orders as PDF. For testing purposes the import and export is currently only possible with G-Drive. Alternatives are on the todo list. 
 
