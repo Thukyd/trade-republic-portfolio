@@ -1,17 +1,29 @@
-# 0.2 | TradeRepublic Portfolio - PDF Converter for Portfolio Performance & Investing.com
+# **0.3 | TradeRepublic Portfolio** 
+# *PDF Converter for Portfolio Performance & Investing.com*
 # a) Description
 This tool should help to keep the overview of the transactions within TradeRepublic. In TR there is the possibility to export all orders as PDF. For testing purposes the import and export is currently only possible with G-Drive. Alternatives are on the todo list. 
+
 
 ## Output A: Master Sheet
 The master sheet lists all previous transactions from the PDFs. 
 
 ## Output B: Delta Sheet (dated)
-The delta sheet contains all new transactions that have been added since the script was last executed. These are intended to be imported into Portfolio Performance. 
+The delta sheet contains all new transactions that have been added since the script was last executed. These are intended to be imported into Portfolio Performance and Investing.com. 
 
-# b) Setup
+## Scope 
 *   optimized for Google Colab (https://colab.research.google.com/)
-*   TradeRepublic statements will be imported via GoogleDrive. All PDF files shoule be in a single folder. You need to configure the path to your G-Drive before usage (see: gdrive_path) 
-*   export .csv optimized for "Portfolio Performance" (https://www.portfolio-performance.info/)
+*   export optimized for "Portfolio Performance" (https://www.portfolio-performance.info/) and "Investing.com" (https://de.investing.com/)
+*   For further information about the import at "Investing.com", see: https://www.investing-support.com/hc/en-us/articles/360000265217-Import-Portfolio-Holdings 
+
+
+# b) Configuration
+## G-Drive Path
+*   TradeRepublic statements will be imported via GoogleDrive. All PDF files shoule be in a single folder. You need to configure the path to your G-Drive before usage (see: "Configurations - to be defined by user")
+
+## Finnhub Token
+* If you want to add a ticker symbol to the sheets you need to have a Finnhub API token. You can register @ https://finnhub.io/ and have to paste your API key in the configs. 
+* You can ignore this, if you don't want to register for a key. 
+
 
 # c) Options to customize
 - for different data sources, see: https://colab.research.google.com/notebooks/io.ipynb
@@ -25,20 +37,19 @@ The delta sheet contains all new transactions that have been added since the scr
 ## Deposits & Withdrawls
 * deposits and withdrawals to the depot are not recorded in PDF format. Therefore they are not taken into account and must be entered by hand if necessary.
 
-## "Order" ID PDF documents
+## "Order" in Trade Republic documents
 * each TradeRepublic document has got a "order" number. This is extracted and stored in the field "Notiz". It serves to prevent duplicate entries.  
 
 # e) Backlog
 ## Open
 * create sheets for portfolio performance in .csv format
 * offer alternatives to G-Drive import/export
+* Investing.com => Import change "Kauf" and "Verkauf" into "Kaufen" and "Verkaufen"
 
 ## To be fixed
 - define "add to delta" by order number - not by row alone
-- examples: calculate_stock_value() => conversion of german/international number system
 - limit reading operations for google sheets https://github.com/burnash/gspread/issues/583
-- examples: name 
-- examples: transaction type & order volume
+- examples
 
 # f) Changelog 
 ## 0.1
@@ -50,3 +61,9 @@ The delta sheet contains all new transactions that have been added since the scr
 ## 0.2
 - fixed | sort extracted transactions by date
 - fixed | double entries of table lables in delta sheet
+
+## 0.3
+- add ticker symbol via finnhub api (requires your own api key)
+- fixed | calculate purchase price
+- add values to sheet ("Kaufkurs", "Gebühren")
+- data structure for Investing.com import
