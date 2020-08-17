@@ -44,7 +44,7 @@ The portfolio sheet contains an overview of all open positions with basic inform
 * offer alternatives to G-Drive import/export
 
 ## To be fixed
-- 
+- ...
 
 # f) Changelog 
 ## 0.1
