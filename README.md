@@ -7,8 +7,8 @@ This tool should help to keep the overview of the transactions within TradeRepub
 ## Output A: Master Sheet
 The master sheet lists all previous transactions from the PDFs. 
 
-## Output B: Delta Sheet (dated)
-The delta sheet contains all new transactions that have been added since the script was last executed. These are intended to be imported into Portfolio Performance and Investing.com. 
+## Output B: Delta Sheet
+The delta sheet contains all new transactions that have been added since the script was last executed. These are intended to be imported into Portfolio Performance and Investing.com. Delta sheets are dated.
 
 ## Output C: Portfolio Sheet
 The portfolio sheet contains an overview of all open positions with basic information as average purchase price. The three fields "Stop Preis", "Limit Preis" and "Strategie" are for notes, which are kept at each execution of the script, if the corresponding position is still in the portfolio. 
@@ -44,10 +44,7 @@ The portfolio sheet contains an overview of all open positions with basic inform
 * offer alternatives to G-Drive import/export
 
 ## To be fixed
--  delta check doesn't work anymore
--  define "add to delta" by order number - not by row alone
-- limit reading operations for google sheets https://github.com/burnash/gspread/issues/583
-- examples
+- 
 
 # f) Changelog 
 ## 0.1
