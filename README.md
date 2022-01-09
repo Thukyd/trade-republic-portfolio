@@ -1,3 +1,6 @@
+# **TradeRepublic Portfolio won't be developed further* 
+*   a cli alternative can be found here: https://github.com/marzzzello/pytr
+
 # **0.4 | TradeRepublic Portfolio** 
 # *PDF Converter for Portfolio Performance & Investing.com*
 # a) Description
