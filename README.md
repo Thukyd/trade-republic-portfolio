@@ -1,4 +1,4 @@
-# **TradeRepublic Portfolio won't be developed further* 
+# **TradeRepublic Portfolio won't be developed further** 
 *   a cli alternative can be found here: https://github.com/marzzzello/pytr
 
 # **0.4 | TradeRepublic Portfolio** 
